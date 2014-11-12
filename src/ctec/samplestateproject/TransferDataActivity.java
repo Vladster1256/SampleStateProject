@@ -27,7 +27,7 @@ public class TransferDataActivity extends Application
 	{
 		return name;
 	}
-	public void setName(TransferDataActivity name)
+	public void setName(String name)
 	{
 		this.name = name;
 	}

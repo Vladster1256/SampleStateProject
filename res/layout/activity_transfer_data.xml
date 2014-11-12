@@ -13,4 +13,47 @@
         android:layout_marginBottom="45dp"
         android:text="@string/TransferButtonText" />
 
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:hint="Name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ageField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Age" />
+
+    <EditText
+        android:id="@+id/powerField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Power Level" />
+
+    <EditText
+        android:id="@+id/stuffsField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Transfer_Data_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="stuffs" />
+
 </RelativeLayout>

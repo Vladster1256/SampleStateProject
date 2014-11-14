@@ -1,34 +1,46 @@
 package ctec.samplestateproject;
 
+import ctec.model.samplestateproject.AndroidAppState;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.app.Application;
+import android.content.Intent;
 
 public class TransferDataActivity extends Application
 {
-	private String name; 
-	private String age;
-	private String powerLevel;
-	private String stuffs;
+	private AndroidAppState appState;
+	private TextView comboText;
 	
-	public void onCreate()
+	public void onCreate(Bundle savedInstanceState)
 	{
-		super.onCreate();
+		super.onCreate(Bunde savedInstances);
+		setContentView(R.layout.activity_transfer_data);
 		
-		name = "";
-		age = "";
-		powerLevel = "";
-		stuffs = "";
+		appState = (AndroidAppState) getApplication();
+		comboText = (TextView) findViewById(R.id.);
+				
+		comboText.setText(appState.getName() + " is " +
+		appState.getAge() + " and has power level of " + appState.getPowerLevel() + " and says " + appState.getStuffs()
 		
+		setupListeners();
 	}
-	public String getName()
+	
+	private void setupListeners()
 	{
-		return name;
-	}
-	public void setName(String name)
-	{
-		this.name = name;
+		homeButton.setOnClickListener(new View.onClickListener()
+		{
+			
+			@Override
+			public void onClick(View v)
+			{
+				Intent returnIntent = new Intent();
+				setResult(RESULT_OK, returnIntent);
+				finish();
+			}
+		});
 	}
 }

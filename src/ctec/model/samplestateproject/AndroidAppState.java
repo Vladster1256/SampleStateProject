@@ -15,5 +15,5 @@ public class AndroidAppState extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_android_app_state);
-	}
-}
+	}//Your Mother
+}//Your Mother

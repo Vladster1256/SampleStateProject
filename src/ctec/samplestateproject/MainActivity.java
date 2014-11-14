@@ -57,7 +57,7 @@ public class MainActivity extends Activity
 	}
 	public void setNameField(EditText nameField)
 	{
-		//Your Motherthis.nameField = nameField;
+		this.nameField = nameField;
 	}
 	public void setAgeField(EditText ageField)
 	{

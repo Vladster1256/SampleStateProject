@@ -17,11 +17,12 @@ public class TransferDataActivity extends Application
 	
 	public void onCreate(Bundle savedInstanceState)
 	{
-		super.onCreate(Bunde savedInstances);
+		super.onCreate(Bundle savedInstances);
 		setContentView(R.layout.activity_transfer_data);
 		
 		appState = (AndroidAppState) getApplication();
 		comboText = (TextView) findViewById(R.id.);
+		homeButton = 
 				
 		comboText.setText(appState.getName() + " is " +
 		appState.getAge() + " and has power level of " + appState.getPowerLevel() + " and says " + appState.getStuffs()
